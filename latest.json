@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "packageName": "live.gymcraft.walk",
+  "channel": "normal",
+  "versionCode": 25,
+  "versionName": "0.7.8",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.7.8/Walkcraft-Android-0.7.8-Normal.apk",
+  "sizeBytes": 268498539,
+  "sha256": "da53a86e2a26a9e5567f3e771b9af294f068ebc0531b4fd5b87fa781b182186f",
+  "notes": [
+    "Comprobador de nuevas versiones con aviso y descarga desde GitHub.",
+    "Cría de mascotas desde Guardián o Ancestral y al nivel máximo.",
+    "Candado de protección, requisitos de cría y aviso de huevos listos."
+  ]
+}
