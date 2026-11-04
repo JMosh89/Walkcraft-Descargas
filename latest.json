@@ -2,14 +2,17 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 25,
-  "versionName": "0.7.8",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.7.8/Walkcraft-Android-0.7.8-Normal.apk",
-  "sizeBytes": 268498539,
-  "sha256": "da53a86e2a26a9e5567f3e771b9af294f068ebc0531b4fd5b87fa781b182186f",
+  "versionCode": 26,
+  "versionName": "0.7.9",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.7.9/Walkcraft-Android-0.7.9-Normal.apk",
+  "sizeBytes": 268574077,
+  "sha256": "8fb3c65773eaa5ce760b4fe3c7edef16ef94154e05522562b0490beee3a80d28",
   "notes": [
-    "Comprobador de nuevas versiones con aviso y descarga desde GitHub.",
-    "Cría de mascotas desde Guardián o Ancestral y al nivel máximo.",
-    "Candado de protección, requisitos de cría y aviso de huevos listos."
-  ]
+    "Combate de Aventura con 19 enemigos, Limo fantasma e Impulso estable.",
+    "Árbol de 120 habilidades: bloques de 2.040, 4.080, 8.160 y 16.320 Almas.",
+    "Nuevas ramas de Almas online, offline, Aventura, Furia y automatización.",
+    "IMPORTANTE: desde la APK 0.7.8 se aplica una sola vez el reinicio acordado de habilidades y Almas, sin devolución. El resto del progreso se conserva.",
+    "Instala sobre Walkcraft, sin desinstalar. Android pedirá confirmar la actualización."
+  ],
+  "publishedAt": "2026-11-04T21:30:15.000Z"
 }
