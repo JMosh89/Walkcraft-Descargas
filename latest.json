@@ -2,17 +2,17 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 26,
-  "versionName": "0.7.9",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.7.9/Walkcraft-Android-0.7.9-Normal.apk",
-  "sizeBytes": 268574077,
-  "sha256": "8fb3c65773eaa5ce760b4fe3c7edef16ef94154e05522562b0490beee3a80d28",
+  "versionCode": 27,
+  "versionName": "0.8.0",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.0/Walkcraft-Android-0.8.0-Normal.apk",
+  "sizeBytes": 269479293,
+  "sha256": "c2dc6160ac7b8ec1bbdc2c529f26d69d1b9e4381d3fd6245e5fda4c4ce11aa02",
   "notes": [
-    "Combate de Aventura con 19 enemigos, Limo fantasma e Impulso estable.",
-    "Árbol de 120 habilidades: bloques de 2.040, 4.080, 8.160 y 16.320 Almas.",
-    "Nuevas ramas de Almas online, offline, Aventura, Furia y automatización.",
-    "IMPORTANTE: desde la APK 0.7.8 se aplica una sola vez el reinicio acordado de habilidades y Almas, sin devolución. El resto del progreso se conserva.",
+    "Nuevo icono de la app: los dos hermanos con el encapuchado, visible en el móvil.",
+    "Incluye Aventura, Almas, Furia y el árbol de 120 habilidades de la 0.7.9.",
+    "Desde la 0.7.9 se conserva toda la partida: esta entrega no añade otro reinicio.",
+    "Desde la 0.7.8 se mantiene el reinicio único acordado de habilidades y Almas, sin devolución; el resto del progreso se conserva.",
     "Instala sobre Walkcraft, sin desinstalar. Android pedirá confirmar la actualización."
   ],
-  "publishedAt": "2026-11-04T21:30:15.000Z"
+  "publishedAt": "2026-11-05T08:56:10.000Z"
 }
