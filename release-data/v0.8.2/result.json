@@ -1,7 +1,17 @@
 {
-  "status": "FAILED",
-  "tag": "v0.8.2",
+  "status": "PUBLIC_DOWNLOAD_VERIFIED",
   "repository": "JMosh89/Walkcraft-Descargas",
-  "phase": "publication",
-  "error": "GitHub operation failed: gh: Not Found (HTTP 404)"
+  "tag": "v0.8.2",
+  "release_id": 435167393,
+  "release_url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/tag/v0.8.2",
+  "asset_id": 713318512,
+  "asset_url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.2/Walkcraft-Android-0.8.2-Normal.apk",
+  "sha256": "2fd6bb6b2504521e9f889189bcad12186f55ff4db1abb377e5c3fc1102ae0359",
+  "size_bytes": 269549124,
+  "anonymous_download_verified": true,
+  "source_commit": "ac17dca177aa98b92c766860a2593da344d32bdb",
+  "published_at": "2026-11-05T12:24:07Z",
+  "verified_at": "2026-11-05T12:24:16.318769+00:00",
+  "feed_modified": false,
+  "signing_key_used": false
 }
