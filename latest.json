@@ -2,17 +2,19 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 27,
-  "versionName": "0.8.0",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.0/Walkcraft-Android-0.8.0-Normal.apk",
-  "sizeBytes": 269479293,
-  "sha256": "c2dc6160ac7b8ec1bbdc2c529f26d69d1b9e4381d3fd6245e5fda4c4ce11aa02",
+  "versionCode": 29,
+  "versionName": "0.8.2",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.2/Walkcraft-Android-0.8.2-Normal.apk",
+  "sizeBytes": 269549124,
+  "sha256": "2fd6bb6b2504521e9f889189bcad12186f55ff4db1abb377e5c3fc1102ae0359",
   "notes": [
-    "Nuevo icono de la app: los dos hermanos con el encapuchado, visible en el móvil.",
-    "Incluye Aventura, Almas, Furia y el árbol de 120 habilidades de la 0.7.9.",
-    "Desde la 0.7.9 se conserva toda la partida: esta entrega no añade otro reinicio.",
-    "Desde la 0.7.8 se mantiene el reinicio único acordado de habilidades y Almas, sin devolución; el resto del progreso se conserva.",
+    "Ascensión corregida: permite reclamar Almas manteniendo la fuerza acumulada de la Torre.",
+    "Super Límite: PREPÁRATE durante 3 segundos y después 8 segundos para pulsar.",
+    "Aren demonio empieza con la barra oscura a cero y carga Destrucción durante 15 segundos de combate.",
+    "Cinemática de la bola gigante y explosión más visible, con el daño real mostrado.",
+    "Correcciones de guardado, pausas de combate e inicio. Sin un reinicio ni un regalo nuevo.",
+    "Desde la 0.7.9 se conserva toda la partida. Desde la 0.7.8 se mantiene el reinicio único acordado de habilidades y Almas, sin devolución; el resto del progreso se conserva.",
     "Instala sobre Walkcraft, sin desinstalar. Android pedirá confirmar la actualización."
   ],
-  "publishedAt": "2026-11-05T08:56:10.000Z"
+  "publishedAt": "2026-11-05T12:24:07Z"
 }
