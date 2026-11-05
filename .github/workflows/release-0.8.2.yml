@@ -1,0 +1,34 @@
+name: Publish verified Walkcraft 0.8.2
+on:
+  push:
+    branches: [main]
+    paths: ['release-data/v0.8.2/start.json']
+permissions:
+  contents: write
+concurrency:
+  group: walkcraft-release-0.8.2
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'JMosh89/Walkcraft-Descargas' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: JMosh89/Walkcraft-Descargas
+    steps:
+      - name: Fetch immutable, public release inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir release-work
+          cd release-work
+          for file in delta.py publish.py patch.b64 notes.md start.json; do
+            curl --fail --location --retry 2 --silent --show-error "https://raw.githubusercontent.com/JMosh89/Walkcraft-Descargas/${GITHUB_SHA}/release-data/v0.8.2/${file}" --output "${file}"
+          done
+      - name: Reconstruct exact signed APK, upload, and verify public download
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd release-work
+          python3 publish.py
