@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "tag": "v0.8.2",
+  "repository": "JMosh89/Walkcraft-Descargas",
+  "phase": "publication",
+  "error": "GitHub operation failed: gh: Not Found (HTTP 404)"
+}
