@@ -28,9 +28,9 @@ try:
  phase='artifact-reconstruction';D.apply('baseline.apk','patch.b64',ASSET)
  if D.sha_file(ASSET)!=start['output']['sha256']:raise RuntimeError('Artifact hash mismatch')
  notes=Path('notes.md').read_text();marker='APK SHA-256: '+start['output']['sha256'];body=notes+'\n\n'+marker+'\n'
- phase='draft-creation';endpoint='repos/'+REPO+'/releases/tags/'+TAG;p=gh(['api',endpoint],False)
- if p.returncode==0:
-  release=json.loads(p.stdout)
+ phase='draft-creation';endpoint='repos/'+REPO+'/releases/tags/'+TAG;releases=api('repos/'+REPO+'/releases?per_page=100');existing=next((r for r in releases if r['tag_name']==TAG),None);p=gh(['api',endpoint],False)
+ if existing is not None or p.returncode==0:
+  release=existing if existing is not None else json.loads(p.stdout)
   if marker not in release.get('body',''):raise RuntimeError('Existing release belongs to different artifact; refusing overwrite')
  elif 'HTTP 404' in p.stderr:
   release=mutate('POST','repos/'+REPO+'/releases',{'tag_name':TAG,'target_commitish':os.environ['GITHUB_SHA'],'name':'Walkcraft0.8.2 — Ascensión y Super Límite','body':body,'draft':True,'prerelease':False})
@@ -42,7 +42,7 @@ try:
   gh(['release','upload',TAG,ASSET,'--repo',REPO])
  phase='authenticated-download-verification';Path('verify').mkdir(exist_ok=True);gh(['release','download',TAG,'--pattern',ASSET,'--dir','verify','--repo',REPO,'--clobber'])
  if D.sha_file(Path('verify')/ASSET)!=start['output']['sha256']:raise RuntimeError('Uploaded APK differs from local signed artifact')
- phase='publication';release=api(endpoint)
+ phase='publication';endpoint='repos/'+REPO+'/releases/'+str(release['id']);release=api(endpoint)
  if release['draft']:release=mutate('PATCH','repos/'+REPO+'/releases/'+str(release['id']),{'draft':False,'prerelease':False,'make_latest':'true'})
  phase='public-anonymous-download-verification';release=api(endpoint);asset=next(a for a in release['assets'] if a['name']==ASSET);url=asset['browser_download_url']
  for attempt in range(3):
