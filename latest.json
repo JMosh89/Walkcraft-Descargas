@@ -2,19 +2,19 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 29,
-  "versionName": "0.8.2",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.2/Walkcraft-Android-0.8.2-Normal.apk",
-  "sizeBytes": 269549124,
-  "sha256": "2fd6bb6b2504521e9f889189bcad12186f55ff4db1abb377e5c3fc1102ae0359",
+  "versionCode": 34,
+  "versionName": "0.8.6",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.8.6/Walkcraft-Android-0.8.6-Normal.apk",
+  "sizeBytes": 275849855,
+  "sha256": "6fef217d5ee2a7ebf9a85e81e6e54516d0e1cca4ed95ac940e492d52e5b326a3",
   "notes": [
-    "Ascensión corregida: permite reclamar Almas manteniendo la fuerza acumulada de la Torre.",
-    "Super Límite: PREPÁRATE durante 3 segundos y después 8 segundos para pulsar.",
-    "Aren demonio empieza con la barra oscura a cero y carga Destrucción durante 15 segundos de combate.",
-    "Cinemática de la bola gigante y explosión más visible, con el daño real mostrado.",
-    "Correcciones de guardado, pausas de combate e inicio. Sin un reinicio ni un regalo nuevo.",
-    "Desde la 0.7.9 se conserva toda la partida. Desde la 0.7.8 se mantiene el reinicio único acordado de habilidades y Almas, sin devolución; el resto del progreso se conserva.",
-    "Instala sobre Walkcraft, sin desinstalar. Android pedirá confirmar la actualización."
+    "Nueva portada animada con la torre, el Rey Demonio, alas en movimiento y rayos rojos.",
+    "El cielo en ruinas suena al aparecer la portada en Android. La pista orquestal de 35 segundos se repite mientras esperas.",
+    "Catálogo de Hitos con 150 objetivos en 13 categorías. Consulta requisitos, progreso y recompensas previstas.",
+    "El resumen Mientras no estabas muestra las Almas obtenidas junto al oro, la experiencia y los monstruos derrotados.",
+    "Corregido el error de guardado que podía bloquear el canje de WELCOME.",
+    "Instala la actualización sobre Walkcraft para conservar la partida. Android te pedirá confirmar la instalación.",
+    "Desde la 0.7.8 sigue aplicándose el reinicio único de habilidades y Almas anunciado al estrenar el árbol. El resto del progreso se conserva."
   ],
-  "publishedAt": "2026-11-05T12:24:07.000Z"
+  "publishedAt": "2026-11-07T16:27:23.000Z"
 }
