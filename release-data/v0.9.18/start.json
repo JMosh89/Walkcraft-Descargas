@@ -1,0 +1,11 @@
+{
+  "tag": "v0.9.18",
+  "source_web_commit": "b09c8a59eff31cb3a5b0cf8714ba7ea0b4621320",
+  "patch_parts": 6,
+  "patch_sha256": "9318f115b6df9c827b5898c94ae779e4cfc88ef46572098cda6c5240f8105c39",
+  "output": {
+    "name": "Walkcraft-Android-0.9.18-Normal.apk",
+    "sha256": "9aa2cd9f0f6eb2d41d1e98a59a05371c2bb67aa0d409f6285a199c0f49e9cb95",
+    "size": 275388095
+  }
+}
