@@ -2,20 +2,19 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 44,
-  "versionName": "0.9.13",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.13/Walkcraft-Android-0.9.13-Normal.apk",
-  "sizeBytes": 277939656,
-  "sha256": "9698d4659dc453cc3c1151cf2edc38092ae2729566f81522e84bcac5a685c522",
+  "versionCode": 49,
+  "versionName": "0.9.18",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.18/Walkcraft-Android-0.9.18-Normal.apk",
+  "sizeBytes": 275388095,
+  "sha256": "9aa2cd9f0f6eb2d41d1e98a59a05371c2bb67aa0d409f6285a199c0f49e9cb95",
   "notes": [
-    "Árbol de habilidades circular en cuatro páginas de 30 nodos, con zoom y vista ampliada.",
-    "Torre y Portal del Vacío con el diseño compacto y el mando de Supervivencia.",
-    "Animación y sonido del espadazo de Aren sincronizados en los tres modos.",
-    "Portada sin el botón Saltar y música Juggernaut en la primera introducción de la Torre.",
-    "Guardado local y guardado en la nube con cuenta.",
-    "Salida y cambio de modo durante un combate, con reinicio del intento en curso.",
-    "Instala sobre Walkcraft para conservar la partida. Android te pedirá confirmar la actualización.",
-    "Las partidas que ya usan el árbol de 120 habilidades conservan sus nodos y Almas."
+    "Equipar auto pone la pieza de mayor poder en cada hueco de Aren.",
+    "Inventario de Aren con grados, rarezas, orden por poder, fusión de estrellas y Forja.",
+    "Nuevo banner de equipo separado del de mascotas. El grado S es más difícil de obtener que el A.",
+    "Recompensas diarias al iniciar sesión. Retomas donde lo dejaste si faltas un día.",
+    "En el acceso 14 recibes 5 tickets, en el 21 un dragón y en el 30 un arma S épica.",
+    "Elige el formato de las monedas en Ajustes: automático, científico o nombres en español.",
+    "Instala encima de Walkcraft para conservar tu partida. Android te pedirá confirmar."
   ],
-  "publishedAt": "2026-11-09T09:41:41.754Z"
+  "publishedAt": "2026-11-15T14:59:47.000Z"
 }
