@@ -1,0 +1,11 @@
+{
+  "tag": "v0.9.22",
+  "source_web_commit": "cb81e93a37dbf1e801b8617a680d863e3afd31b9",
+  "patch_parts": 1,
+  "patch_sha256": "46d7a7c93b40b8d83e8254a80f8a17728470e788ad3d9d16caf5404d9f730abb",
+  "output": {
+    "name": "Walkcraft-Android-0.9.22-Normal.apk",
+    "sha256": "9a3ea7e6a7a5d4d8ac46e179bbcc88a260a4a8fe478f85f4692e4414c7d626f5",
+    "size": 275396514
+  }
+}
