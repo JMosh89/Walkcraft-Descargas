@@ -1,0 +1,38 @@
+name: Publish verified Walkcraft 0.9.22
+on:
+  push:
+    branches: [main]
+    paths: ['release-data/v0.9.22/start.json']
+permissions:
+  contents: write
+concurrency:
+  group: walkcraft-release-0.9.22
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'JMosh89/Walkcraft-Descargas' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: JMosh89/Walkcraft-Descargas
+    steps:
+      - name: Fetch release inputs at the triggering commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir release-work
+          cd release-work
+          base="https://raw.githubusercontent.com/JMosh89/Walkcraft-Descargas/${GITHUB_SHA}/release-data/v0.9.22"
+          fetch() { curl --fail --location --retry 2 --silent --show-error "${base}/$1" --output "$1"; }
+          for file in start.json delta.py publish.py notes.md; do fetch "$file"; done
+          count=$(python3 -c 'import json; n=json.load(open("start.json"))["patch_parts"]; assert type(n) is int and 1<=n<=100; print(n)')
+          for ((i=0; i<count; i++)); do
+            printf -v part 'patch-%03d.b64' "$i"
+            fetch "$part"
+            cat "$part" >> patch.b64
+          done
+      - name: Publish the exact signed APK and verify anonymous download
+        shell: bash
+        working-directory: release-work
+        run: python3 publish.py
