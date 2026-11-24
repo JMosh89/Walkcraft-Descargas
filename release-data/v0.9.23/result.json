@@ -1,0 +1,19 @@
+{
+  "status": "PUBLIC_DOWNLOAD_VERIFIED",
+  "repository": "JMosh89/Walkcraft-Descargas",
+  "tag": "v0.9.23",
+  "source_commit": "e5bb16e96df17da9444576beae91e7aa474f7e81",
+  "run_id": "45378860176",
+  "feed_modified": false,
+  "signing_key_used": false,
+  "release_id": 456631081,
+  "release_url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/tag/v0.9.23",
+  "asset_id": 786797721,
+  "asset_url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.23/Walkcraft-Android-0.9.23-Normal.apk",
+  "sha256": "3b02b0795ab61cc6a72df7a8fd49ba2924e4718c97caf9f5ead52bfeacd03c6e",
+  "size_bytes": 266024606,
+  "published_at": "2026-11-24T10:53:06Z",
+  "verified_at": "2026-11-24T10:53:08.233094+00:00",
+  "target_commitish": "b6c51461bd4b1510bb28ffc65af73f3df5093bea",
+  "anonymous_download_verified": true
+}
