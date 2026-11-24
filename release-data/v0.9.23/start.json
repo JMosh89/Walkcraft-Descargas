@@ -1,0 +1,17 @@
+{
+  "tag": "v0.9.23",
+  "patch_parts": 143,
+  "patch_size": 104793511,
+  "patch_sha256": "1ecd3b31b451e744d3e7fbcccf7ca0ecfe9ee5212fc604d14d015a1b89972337",
+  "target_commitish": "b6c51461bd4b1510bb28ffc65af73f3df5093bea",
+  "base": {
+    "url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.22/Walkcraft-Android-0.9.22-Normal.apk",
+    "size": 275396514,
+    "sha256": "9a3ea7e6a7a5d4d8ac46e179bbcc88a260a4a8fe478f85f4692e4414c7d626f5"
+  },
+  "output": {
+    "name": "Walkcraft-Android-0.9.23-Normal.apk",
+    "size": 266024606,
+    "sha256": "3b02b0795ab61cc6a72df7a8fd49ba2924e4718c97caf9f5ead52bfeacd03c6e"
+  }
+}
