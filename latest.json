@@ -2,16 +2,20 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 53,
-  "versionName": "0.9.22",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.22/Walkcraft-Android-0.9.22-Normal.apk",
-  "sizeBytes": 275396514,
-  "sha256": "9a3ea7e6a7a5d4d8ac46e179bbcc88a260a4a8fe478f85f4692e4414c7d626f5",
+  "versionCode": 54,
+  "versionName": "0.9.23",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.23/Walkcraft-Android-0.9.23-Normal.apk",
+  "sizeBytes": 266024606,
+  "sha256": "3b02b0795ab61cc6a72df7a8fd49ba2924e4718c97caf9f5ead52bfeacd03c6e",
   "notes": [
-    "Modo auto ×3 en Supervivencia. Acelera los ataques básicos y los Límites normales. Vuelve a manual para las secuencias y la transformación.",
-    "La Forja permite proteger piezas, preparar tríos con Auto grado o Auto rareza y conservar el mayor número de estrellas.",
-    "Auto estrellas para mascotas, con confirmación antes de consumir la copia.",
-    "Avisos de salida dentro del juego y un resumen más corto al ascender."
+    "Torre de Dios renovada, con nuevas formas y diálogos de los jefes y un combate de tres fases en el piso 100.",
+    "Super Límite con carga más directa. Aren ataca al llenarla y Destrucción se activa al llegar el rival a 1 PV en la fase máxima.",
+    "Alquimia y Expediciones con Filos, Núcleos, Sombras y portales de bronce, plata y oro.",
+    "Nuevos niveles máximos de mascotas por forma y mejoras de presentación del inventario y los menús.",
+    "Música y efectos con volúmenes separados. Se añadieron avisos sonoros de combate, victoria y botín raro.",
+    "Despertar guía la primera mejora de Aren. Reclama gemas o tickets una vez por cada uno de los 150 Hitos.",
+    "Acceso desde la portada, nombres únicos y moderados en el ranking y ocultación de banners vencidos. Se conservan los nombres registrados.",
+    "Avisos opcionales en Android cuando esté disponible el ticket diario y cuando termine una expedición de mascota."
   ],
-  "publishedAt": "2026-11-16T11:17:40.000Z"
+  "publishedAt": "2026-11-24T10:53:06.000Z"
 }
