@@ -1,0 +1,63 @@
+name: Publish verified Walkcraft 0.9.23
+on:
+  push:
+    branches: [walkcraft-release-0.9.23]
+    paths: ['release-data/v0.9.23/start.json']
+permissions:
+  contents: write
+concurrency:
+  group: walkcraft-release-0.9.23
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'JMosh89/Walkcraft-Descargas' && github.ref == 'refs/heads/walkcraft-release-0.9.23'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: JMosh89/Walkcraft-Descargas
+    steps:
+      - name: Fetch immutable public release inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$GITHUB_SHA" =~ ^[0-9a-f]{40}$ ]]
+          mkdir release-work
+          cd release-work
+          base="https://raw.githubusercontent.com/JMosh89/Walkcraft-Descargas/${GITHUB_SHA}/release-data/v0.9.23"
+          for file in delta.py start.json notes.md publish.py; do
+            curl --fail --location --retry 2 --silent --show-error --output "$file" "$base/$file"
+          done
+          python3 - "$base" <<'PY'
+          import json, shutil, subprocess, sys
+          from concurrent.futures import ThreadPoolExecutor
+          from pathlib import Path
+          start = json.loads(Path('start.json').read_text(encoding='utf-8'))
+          if start.get('tag') != 'v0.9.23':
+              raise SystemExit('Incorrect release metadata tag')
+          raw = start.get('patch_parts')
+          if type(raw) is int and 1 <= raw <= 1000:
+              parts = [f'patch-{i:03}.bin' for i in range(raw)]
+          elif isinstance(raw, list) and 1 <= len(raw) <= 1000 and raw == [f'patch-{i:03}.bin' for i in range(len(raw))]:
+              parts = raw
+          else:
+              raise SystemExit('Invalid patch part list')
+          def fetch(name):
+              subprocess.run(['curl', '--fail', '--location', '--retry', '2', '--silent', '--show-error',
+                              '--output', name, sys.argv[1] + '/' + name], check=True)
+              return name
+          with open('patch.gz', 'wb') as combined:
+              with ThreadPoolExecutor(max_workers=8) as pool:
+                  for name in pool.map(fetch, parts):
+                      with open(name, 'rb') as part:
+                          shutil.copyfileobj(part, combined)
+                      Path(name).unlink()
+              if combined.tell() != start['patch_size']:
+                  raise SystemExit('Incorrect combined patch size')
+          PY
+      - name: Reconstruct signed APK, publish and verify its download
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd release-work
+          python3 publish.py
