@@ -1,0 +1,37 @@
+{
+  "tag": "v0.9.27",
+  "target_commitish": "0cc7b8e6009071584c564df856636b1e2555c363",
+  "patch_parts": [
+    "patch-000.bin",
+    "patch-001.bin",
+    "patch-002.bin",
+    "patch-003.bin",
+    "patch-004.bin",
+    "patch-005.bin",
+    "patch-006.bin",
+    "patch-007.bin",
+    "patch-008.bin",
+    "patch-009.bin",
+    "patch-010.bin",
+    "patch-011.bin",
+    "patch-012.bin",
+    "patch-013.bin",
+    "patch-014.bin",
+    "patch-015.bin",
+    "patch-016.bin",
+    "patch-017.bin",
+    "patch-018.bin"
+  ],
+  "patch_size": 11218571,
+  "patch_sha256": "d4a61bdf8ac3cd17b1e266e206b2df657e6b9b522da9b185d42eda2917ca7991",
+  "base": {
+    "url": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.23/Walkcraft-Android-0.9.23-Normal.apk",
+    "size": 266024606,
+    "sha256": "3b02b0795ab61cc6a72df7a8fd49ba2924e4718c97caf9f5ead52bfeacd03c6e"
+  },
+  "output": {
+    "name": "Walkcraft-Android-0.9.27-Normal.apk",
+    "size": 276625554,
+    "sha256": "a0ef76b59ae3b6a43e183c507a83402a2dc29bbec448828dda5631a3cd96352c"
+  }
+}
