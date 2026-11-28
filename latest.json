@@ -2,20 +2,20 @@
   "schema": 1,
   "packageName": "live.gymcraft.walk",
   "channel": "normal",
-  "versionCode": 54,
-  "versionName": "0.9.23",
-  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.23/Walkcraft-Android-0.9.23-Normal.apk",
-  "sizeBytes": 266024606,
-  "sha256": "3b02b0795ab61cc6a72df7a8fd49ba2924e4718c97caf9f5ead52bfeacd03c6e",
+  "versionCode": 58,
+  "versionName": "0.9.27",
+  "apkUrl": "https://github.com/JMosh89/Walkcraft-Descargas/releases/download/v0.9.27/Walkcraft-Android-0.9.27-Normal.apk",
+  "sizeBytes": 276625554,
+  "sha256": "a0ef76b59ae3b6a43e183c507a83402a2dc29bbec448828dda5631a3cd96352c",
   "notes": [
-    "Torre de Dios renovada, con nuevas formas y diálogos de los jefes y un combate de tres fases en el piso 100.",
-    "Super Límite con carga más directa. Aren ataca al llenarla y Destrucción se activa al llegar el rival a 1 PV en la fase máxima.",
-    "Alquimia y Expediciones con Filos, Núcleos, Sombras y portales de bronce, plata y oro.",
-    "Nuevos niveles máximos de mascotas por forma y mejoras de presentación del inventario y los menús.",
-    "Música y efectos con volúmenes separados. Se añadieron avisos sonoros de combate, victoria y botín raro.",
-    "Despertar guía la primera mejora de Aren. Reclama gemas o tickets una vez por cada uno de los 150 Hitos.",
-    "Acceso desde la portada, nombres únicos y moderados en el ranking y ocultación de banners vencidos. Se conservan los nombres registrados.",
-    "Avisos opcionales en Android cuando esté disponible el ticket diario y cuando termine una expedición de mascota."
+    "Android. La pantalla se mantiene encendida mientras Walkcraft está en primer plano.",
+    "Torre. Dos cinemáticas de Irsavia en el piso 50, con los efectos del vídeo y la música de la Torre.",
+    "Expedición. Normal, Difícil y Experto. Los portales conservan la llave gastada y permiten reintentar.",
+    "Botín de Expedición. Filo y Núcleo garantizados con valores variables y 10 % de probabilidad de un Núcleo extra.",
+    "Supervivencia. Más fragmentos de llave, resumen de botín por enemigo y 50 % de opción de catalizador en la primera victoria de cada entrada.",
+    "Nido. Criar G1, G2 y G3 cuesta 1, 3 y 6 catalizadores.",
+    "Alquimia. Crafteo de llaves y accesorios. Puedes fabricar la llave arcoíris. El material de fabricación se llama Lapislázuli.",
+    "Combate. Escalas unificadas, mascotas que crecen según su evolución y arena de Torre más amplia."
   ],
-  "publishedAt": "2026-11-24T10:53:06.000Z"
+  "publishedAt": "2026-11-28T11:13:08.000Z"
 }
